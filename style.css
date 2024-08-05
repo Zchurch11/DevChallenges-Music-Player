@@ -1,0 +1,110 @@
+/* font-family:  */
+* {
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body, h1, h2, h3, h4, p, figure{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+    color: #4D5562;
+    background: url('./assets/bg.jpg') top right no-repeat  ;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.music-player{
+    background-color: #121826a6;
+    max-width: 340px;
+    border-radius: 16px;
+    padding: 20px 20px 28px;
+}
+.img-container{
+    margin: 0 auto;
+}
+.img-container img {
+    width: 100%;
+    border-radius: 25px;
+}
+.song-info{
+    text-align: center;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 24px;
+}
+.song-title{
+    font-size: 1rem;
+    color: #E5E7EB;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.artist {
+    font-size: .75rem;
+}
+.progress-container{
+    width: 100%;
+    padding-bottom: 36px;
+}
+.time-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: .625rem;
+}
+.progress-bar{
+    width: 100%;
+    background-color: #E5E7EB;
+    height: 5px;
+    border-radius: 25px;
+}
+.progress-fill{
+    background-color: #C93B76;
+    width: 0px;
+    height: 5px;
+    display: block;
+    border-radius: 25px;
+}
+.controls{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.play{
+    margin-inline: 20px;
+    background-color: rgb(201, 59, 118);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 16px  rgba(201, 59, 118, 0.3);
+
+}
+.play:hover{
+    scale: 1.1
+}
+.prev, .next {
+    cursor: pointer;
+}
+.prev:hover, .next:hover{
+    scale: 1.2;
+}
+
+
+@media (min-width: 500px) and (max-width: 800px){
+    .music-player{
+        max-width: 400px ;
+    }
+}

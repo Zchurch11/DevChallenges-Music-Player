@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+ <main class="music-player">
+    <div class="player-inner">
+        <figure class="img-container" >
+            <img class="cover-art" src="./assets/cover-1.png" alt="">
+        </figure>
+        <div class="song-info">
+            <h1 class="song-title">Lost in the City Lights</h1>
+            <small class="artist">Cosmo Sheldrake</small> 
+        </div>
+        <div class="progress-container">
+            <div class="time-container">
+                <small class="current-time">00:00</small>
+                <small class="total-time">03:15</small>
+            </div>
+            <div class="progress-bar">
+                <span class="progress-fill"></span>
+            </div>
+        </div>
+        <div class="controls">
+            <span class="prev">
+                <img src="./assets/Stop_and_play_fill-1.svg" alt="">
+            </span>
+            <span data-playing="false" aria-role class="play">
+                <img src="./assets/Play_fill.svg" alt="">
+            </span>
+            <span class="next">
+                <img src="./assets/Stop_and_play_fill_reverse.svg" alt="">
+            </span>
+        </div>
+        
+
+    </div>
+ </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
